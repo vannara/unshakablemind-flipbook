@@ -224,6 +224,39 @@ td {
   height: 28px;
 }
 
+.write-line {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  margin: 10px 0 14px;
+  font-size: 16px;
+}
+
+.write-line span:first-child {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--green-deep);
+  min-width: 72px;
+}
+
+.write-line .rule {
+  flex: 1;
+  border-bottom: 1px solid var(--ink);
+  min-height: 22px;
+}
+
+.action-table th.done,
+.action-table td.done {
+  width: 52px;
+  text-align: center;
+}
+
+.action-table td {
+  height: 42px;
+}
+
 .footer-line {
   margin-top: auto;
   font-style: italic;
