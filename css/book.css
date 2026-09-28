@@ -109,9 +109,10 @@ body {
 
 .page-inner {
   height: 100%;
-  padding: 42px 46px 36px;
+  padding: 36px 40px 28px;
   display: flex;
   flex-direction: column;
+  min-height: 0;
 }
 
 .cover {
@@ -164,19 +165,19 @@ body {
 h2 {
   font-family: "Cormorant Garamond", serif;
   font-weight: 500;
-  font-size: 34px;
-  line-height: 1.1;
+  font-size: 30px;
+  line-height: 1.12;
   color: var(--green-deep);
 }
 
 .lede {
-  margin: 14px 0 18px;
-  font-size: 17px;
-  line-height: 1.55;
+  margin: 10px 0 12px;
+  font-size: 16px;
+  line-height: 1.45;
   color: var(--ink-soft);
 }
 
-p { font-size: 15.5px; line-height: 1.6; margin-bottom: 12px; }
+p { font-size: 15px; line-height: 1.5; margin-bottom: 10px; }
 
 ol, ul { margin: 8px 0 14px 18px; font-size: 15.5px; line-height: 1.55; }
 li { margin-bottom: 8px; }
@@ -274,6 +275,45 @@ td {
 .spread-note {
   color: var(--terra);
   font-style: italic;
+}
+
+.term {
+  display: block;
+  margin: 8px 0 14px;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+
+li .term {
+  margin: 6px 0 0;
+}
+
+.cta-copy {
+  margin: 22px auto 16px;
+  max-width: 320px;
+  font-size: 16px;
+  line-height: 1.45;
+  color: var(--ink);
+  font-style: normal;
+}
+
+.cta-btn {
+  display: inline-block;
+  font-family: "Source Sans 3", sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-decoration: none;
+  background: var(--green-deep);
+  color: var(--paper);
+  padding: 12px 22px;
+  border: 1px solid var(--green-deep);
+}
+
+.cta-btn:hover {
+  background: var(--green);
 }
 
 @media (max-width: 820px) {
