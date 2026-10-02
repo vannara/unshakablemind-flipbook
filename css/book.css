@@ -295,11 +295,24 @@ td {
   height: 42px;
 }
 
-.footer-line {
+.reflect {
   margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid var(--rule);
   font-style: italic;
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.45;
+}
+.reflect strong {
+  display: block;
+  font-family: "Source Sans 3", sans-serif;
+  font-style: normal;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
   color: var(--terra);
-  font-size: 16px;
+  margin-bottom: 6px;
 }
 
 .small {
