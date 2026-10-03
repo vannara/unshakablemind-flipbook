@@ -11,7 +11,7 @@
     if (!soundOn || !flipSound) return;
     try {
       flipSound.currentTime = 0;
-      flipSound.volume = 0.55;
+      flipSound.volume = 0.35;
       flipSound.play().catch(function () {});
     } catch (e) {}
   }
@@ -30,16 +30,22 @@
       flipSound.currentTime = 0;
     }).catch(function () {});
 
+    const narrow = window.innerWidth < 820;
+    const pageW = narrow ? Math.min(window.innerWidth - 8, 420) : 480;
+    const pageH = narrow
+      ? Math.max(520, Math.round(window.innerHeight - 100))
+      : 720;
+
     pageFlip = new St.PageFlip(document.getElementById("book"), {
-      width: 550,
-      height: 720,
+      width: pageW,
+      height: pageH,
       size: "stretch",
-      minWidth: 280,
+      minWidth: 240,
       maxWidth: 700,
-      minHeight: 400,
-      maxHeight: 900,
+      minHeight: 420,
+      maxHeight: 1000,
       showCover: true,
-      mobileScrollSupport: false,
+      mobileScrollSupport: true,
       maxShadowOpacity: 0.45,
       useMouseEvents: true,
       flippingTime: 900,
