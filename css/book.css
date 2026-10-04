@@ -308,9 +308,9 @@ td {
   margin: 4px 0 8px;
 }
 .diag .cost { font-size: 15px; color: var(--ink-soft); margin-bottom: 10px; }
-.pair { display: flex; gap: 10px; margin: 6px 0 10px; }
+.pair { display: flex; flex-direction: column; gap: 8px; margin: 8px 0 12px; }
 .pair figure { flex: 1; margin: 0; }
-.pair img { width: 100%; height: 148px; object-fit: cover; display: block; border: 1px solid var(--rule); }
+.pair img { width: 100%; height: 210px; object-fit: cover; display: block; border: 1px solid var(--rule); }
 .pair figcaption {
   font-family: "Source Sans 3", sans-serif;
   font-size: 10px;
@@ -398,7 +398,7 @@ li .term {
   h2 { font-size: 22px; margin-bottom: 8px; }
   .step-num { font-size: 44px; }
   .diag .habit { font-size: 20px; }
-  .pair img { height: 92px; }
+  .pair img { height: 160px; }
   p, .lede, .step-do, .science, .reflect { font-size: 14px; }
   #book { width: 100vw; height: calc(100dvh - 92px); }
   .chrome { width: 100%; padding: 0 10px; margin-bottom: 6px; }
